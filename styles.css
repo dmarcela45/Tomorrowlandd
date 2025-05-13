@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+  }
+  nav.navbar {
+    background-color: #000;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .logo-navbar {
+    width: 40px;
+    height: 40px;
+  }
+  .site-title {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .navbar-center a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  .navbar-center a:hover {
+    color: #e60073;
+  }
+  .navbar-right {
+    text-align: right;
+    font-size: 0.85rem;
+    line-height: 1.2;
+  }
+  header.hero {
+    background-image: url('banner-tomorrowland.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+  }
+  header.hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+  header.hero > * {
+    position: relative;
+    z-index: 1;
+  }
+  .logo {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  h1, h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .btn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+  }
+  section {
+    padding: 30px 20px;
+    text-align: center;
+  }
+  section p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: justify;
+  }
+  .grid-artistas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .grid-artistas div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 60px;
+  }
+  .grid-artistas img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-bottom: 20px;
+  }
+  .countdown-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    gap: 40px;
+    text-align: left;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  section, .split-block, .countdown-section {
+  border-bottom: 1px solid white;
+  margin-bottom: 40px;
+}
+  .countdown-img {
+    width: 400px;
+    height: auto;
+    display: block;
+  }
+  
+  .countdown-text {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    height: 100%; 
+  }
+  
+  .grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px, 20px;
+  }
+  .grid-galeria img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  .grid-galeria img:hover {
+    transform: scale(1.02);
+  }
+  .split-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 60px 20px;
+  }
+  .split-text {
+    flex: 1 1 50%;
+    padding: 20px;
+    text-align: left;
+  }
+  .split-image {
+    flex: 1 1 40%;
+    text-align: right;
+  }
+  .split-image img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+  @media (max-width: 768px) {
+    .grid-artistas img {
+      width: 80px;
+      height: 80px;
+    }
+    header.hero h1 {
+      font-size: 2rem;
+    }
+    .split-block,
+    .countdown-section {
+      flex-direction: column;
+      text-align: center;
+    }
+    .split-text, .split-image, .countdown-text {
+      flex: 1 1 100%;
+      padding: 10px;
+    }
+    section h2 {
+        margin-bottom: 40px;
+      }
+  }
+  
