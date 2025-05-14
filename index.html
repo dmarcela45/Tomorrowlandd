@@ -1,105 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tomorrowland Colombia 2025</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="navbar-left">
-      <img src="logo-tomorrowland.png" alt="Logo Tomorrowland" class="logo-navbar" />
-      <span class="site-title">TOMORROWLAND COLOMBIA 2025</span>
-    </div>
-    <div class="navbar-center">
-      <a href="#entradas">BOLETAS</a>
-      <a href="#artistas">ARTISTAS</a>
-      <a href="#galeria">GALERÍA</a>
-      <a href="#contacto">CONTACTO</a>
-    </div>
-    <div class="navbar-right">
-      <span>MEDELLÍN<br><small>19 - 20 DE SEPTIEMBRE 2025</small></span>
-    </div>
-  </nav>
-
-  <header class="hero">
-    <img src="logo-tomorrowland.png" alt="Logo Tomorrowland" class="logo" />
-    <h1>TOMORROWLAND COLOMBIA 2025</h1>
-    <p>MEDELLÍN · 19 - 20 DE SEPTIEMBRE 2025</p>
-    <a href="#entradas" class="btn">COMPRA TUS ENTRADAS</a>
+  <header class="header">
+    <div class="logo">TOMORROWLAND COLOMBIA 2025</div>
+    <nav class="nav">
+    
+      <a href="#boletas">Boletas</a>
+      <a href="#artistas">Artistas</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+      <img src="../Imagenes/banner-tomorrowland.jpg">
+    </nav>
+    <div class="fechas">Medellín<br>19 - 20 de Septiembre 2025</div>
   </header>
 
-  <section>
-    <h2>UNA VIVENCIA ÚNICA</h2>
+  <section class="hero">
+    <h1>Tomorrowland Colombia 2025</h1>
+    <a class="cta" href="#boletas">Compra tus entradas</a>
+  </section>
+
+  <section class="descripcion">
+    <h2>Una Vivencia Única</h2>
     <p>Atrévete a vivir la experiencia que despertará todos tus sentidos en Tomorrowland Colombia 2025: un encuentro de música, magia y emoción donde la ciudad vibra al ritmo de miles de almas conectadas por el mismo latido. Déjate llevar por los sonidos del mañana, sumérgete en un universo de luces, libertad y energía, y forma parte de una historia que solo se vive una vez.</p>
   </section>
 
-  <section id="artistas">
-    <h2>ARTISTAS</h2>
-    <div class="grid-artistas">
-      <div><img src="aoki.jpg" alt="Steve Aoki"><span>Steve Aoki</span></div>
-      <div><img src="guetta.jpeg" alt="David Guetta"><span>David Guetta</span></div>
-      <div><img src="mind-against.jpg" alt="Mind Against"><span>Mind Against</span></div>
-      <div><img src="tale-of-us.jpeg" alt="Tale of Us"><span>Tale of Us</span></div>
-      <div><img src="claptone.jpg" alt="Claptone"><span>Claptone</span></div>
+  <section class="artistas" id="artistas">
+    <h2>Artistas</h2>
+    <div class="artistas-lista">
+      <div class="artista"><img src="../Imagenes/aoki.jpg" alt="Aoki"><p>AOKI</p></div>
+      <div class="artista"><img src="../Imagenes/guetta.jpeg" alt="David Guetta"><p>DAVID GUETTA</p></div>
+      <div class="artista"><img src="../Imagenes/mind-against.jpg" alt="Mind Against"><p>MIND AGAINST</p></div>
+      <div class="artista"><img src="../Imagenes/tale-of-us.jpeg" alt="Tale of Us"><p>TALE OF US</p></div>
+      <div class="artista"><img src="../Imagenes/claptone.jpg" alt="Claptone"><p>CLAPTONE</p></div>
     </div>
+  </section>
+
+  <section class="info">
     <p>Prepárate para vivir una descarga de energía con los DJs más icónicos del planeta, en un show donde cada beat hará vibrar tu alma. Este año, Tomorrowland eleva el ritmo como nunca antes.</p>
-  </section>
-
-  <section class="countdown-section">
-    <img src="countdown-flip.png" alt="Cuenta regresiva Tomorrowland" class="countdown-img" />
-    <div class="countdown-text">
-      <h2>¡La cuenta regresiva comenzó!</h2>
-      <p>Las primeras 100 entradas para Tomorrowland Medellín 2025 tendrán un 30% de descuento. No te quedes por fuera y sé parte de esta experiencia inolvidable desde el primer latido.</p>
-      <a href="#entradas" class="btn">COMPRA TUS ENTRADAS</a>
+    <a class="cta" href="#boletas">Compra tus entradas</a>
+    <div class="cuenta-regresiva">
+      <span><strong>197</strong><br>Días</span>
+      <span><strong>09</strong><br>Horas</span>
+      <span><strong>38</strong><br>Minutos</span>
     </div>
+    <p class="promo">¡La cuenta regresiva comenzó! Las primeras 100 entradas para Tomorrowland Medellín 2025 tendrán un 30% de descuento, no te quedes por fuera y sé parte de esta experiencia inolvidable desde el primer latido. Más info...</p>
   </section>
 
-  <section id="galeria">
-    <h2>GALERÍA</h2>
+  <section class="galeria" id="galeria">
+    <h2>Galería</h2>
     <p>Revive la energía, la magia y los momentos inolvidables de ediciones pasadas en nuestra galería de experiencias. Cada imagen captura la emoción de un viaje único, donde la música, la luz y las almas vibraron al unísono. Déjate inspirar por lo vivido… y prepárate para lo que está por venir.</p>
-    <div class="grid-galeria">
-      <img src="galeria-1.jpg" alt="Galería 1">
-      <img src="galeria-2.jpg" alt="Galería 2">
-      <img src="galeria-3.jpg" alt="Galería 3">
+    <div class="imagenes">
+      <img src="../Imagenes/CHICAS.jpg" alt="Galería 1">
+      <img src="../Imagenes/CHICA SOLA.jpg" alt="Galería 2">
+      <img src="../Imagenes/lalalalala.jpg" alt="Galería 3">
     </div>
   </section>
 
-  <div class="split-block">
-    <div class="split-image">
-      <img src="experiencia-banner.jpeg" alt="Experiencia Tomorrowland">
-    </div>
-    <div class="split-text">
-      <h2>ALOJAMIENTO</h2>
-      <p>Medellín te espera con una amplia oferta de alojamiento para todos los gustos y presupuestos. Desde hoteles boutique hasta hostales y apartamentos, encontrarás opciones cerca del Parque Norte y en zonas estratégicas como El Poblado, Laureles y el centro de la ciudad. Te recomendamos reservar con anticipación para garantizar disponibilidad durante el festival.</p>
-    </div>
-  </div>
-
-  <div class="split-block">
-    <div class="split-text">
-      <h2>TRANSPORTE</h2>
-      <p>Opciones para llegar al festival:</p>
-      <ul>
-        <li>Metro de Medellín: Estación Universidad, a pocos pasos del Parque Norte.</li>
-        <li>Buses aliados: Rutas especiales habilitadas para asistentes del festival.</li>
-        <li>Taxi o apps de movilidad: Uber, DiDi, Cabify y taxis locales disponibles.</li>
-        <li>Bicicleta o caminata: Ideal si te hospedas cerca del evento.</li>
-      </ul>
-    </div>
-    <div class="split-image">
-      <img src="mapa-parque-norte.jpg" alt="Mapa Parque Norte">
-    </div>
-  </div>
-
-  <section id="contacto">
-    <h2>VISADOS</h2>
-    <p>Si viajas desde el exterior, revisa con antelación los requisitos migratorios para entrar a Colombia. Algunos países no requieren visa para estancias cortas por turismo, pero otros sí. Consulta con la embajada o consulado colombiano en tu país y asegúrate de tener tu documentación al día para vivir esta experiencia sin contratiempos.</p>
-  </section>
-
-  <footer>
-    <p>© 2025 TOMORROWLAND - WEBSITE TERMS OF USE - PRIVACY POLICY</p>
-    <p><strong>Email:</strong> Tomorrowland@info.com.co</p>
+  <footer class="footer">
+    <p>TOMORROWLAND</p>
+    <p>Tomorrowland@info.com.co</p>
+    <p>&copy; 2025 Tomorrowland - Website Terms of Use - Privacy Policy</p>
   </footer>
+  <script src="countdown.js"></script>
 </body>
 </html>
